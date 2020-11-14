@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="vn">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hoc.css">
+    <title></title>
+</head>
+
+<body>
+    <!--
+    <div>
+        <h2>Buoi 1: Gioi thieu ve JS</h2>
+    </div>
+    <div>Alert se hien thi 1 bang thong bao ket qua tren man hinh</div>
+    <div>Cac toan tu trong JS</div>
+    <div>Cong tru nhan chia, chia co du: +-*/ %</div>
+    <div>Toan tu so sanh: == === > <>= <=</div> <div>Toan tu ly luan: && || !</div>
+
+    <input type="number" placeholder="Enter your age" id="age">
+    <button id="btnSubmit">Click on me</button>
+-->
+    <h3 class="text-center">Giải phương trình bậc nhất Ax + B = C</h3>
+    <div class="form__bacNhat">
+        <div class="error" id="error1">A không được để trống</div>
+        <div class="form-group">
+            <span>Nhập A: </span>
+            <input type="number" id="numA">
+        </div>
+        <div class="error" id="error2">B không được để trống</div>
+        <div class="form-group">
+            <span>Nhập B: </span>
+            <input type="number" id="numB">
+        </div>
+        <div class="error" id="error3">C không được để trống</div>
+        <div class="form-group">
+            <span>Nhập C: </span>
+            <input type="number" id="numC">
+        </div>
+    </div>
+    <div class="text-center">
+        <button id="btn_giaiToan" onclick=" output();">Giải bài toán</button>
+    </div>
+    <div id="output"> </div>
+
+<!--
+    <script>
+        /*       // Dùng addEventListener sẽ gây lỗi output vì mỗi lần click on page sẽ điều hiện kết quả
+          var btnGiaiToan= document.getElementById("btn_giaiToan");
+               document.addEventListener("click", function(){
+                   var numA= document.getElementById("numA").value;
+                   var numB= document.getElementById("numB").value;
+                   var numC= document.getElementById("numC").value;
+       
+                   var numX = (numC -numB)/numA; 
+                   document.getElementById("output").innerHTML = "Result X is: " + numX;
+           });*/
+
+        //function onlick on btn_giaiToan chỉ thực hiện và đưa kết quả khi click on button
+        function output() {
+            var numA = document.getElementById("numA").value;
+            var numB = document.getElementById("numB").value;
+            var numC = document.getElementById("numC").value;
+            var result;
+            if ((numA !== '') && (numB !== '') && (numC !== '')) {
+                if (numA == 0) {
+                    if (numB == numC) {
+                        result = "Phương trình có vô số nghiệm"
+                    }
+                    else if (numB != C) {
+                        result = "Phương trình vô nghiệm!"
+                    }
+                }//end if
+                else {
+                    result = (numC - numB) / numA;
+                }
+            }
+            else { document.getElementsByClassName("error").style.display = "block"; }
+            document.getElementsByClassName("error").style.display = "none";
+            document.getElementById("output").innerHTML = "Result X is: " + result;
+        }
+
+
+
+    </script>
+-->
+    <script>
+        /*    //script cuoi trang giup toi uu toc do trang
+
+            var name = "Hello Ngoc";
+            var btn = document.getElementById("btnSubmit");
+            //su dung addEventListener to listen to the Event of an Element
+            btn.addEventListener("click", function () {
+                //lay gia tri tu field .value
+                var age = document.getElementById("age").value;
+                if (age > 20) {
+                    alert("Chuc mung ban");
+                }
+                else {
+                    alert("Lan sau");
+                }
+                console.log("Tuoi: " + age);
+                //
+            }//end func
+            );//end event
+    */
+    </script>
+
+
+<!--14/11/2020-->
+<div class="name">CocaCola</div> 
+<div class="name">7Up</div>
+<div class="name">Sting</div>
+
+<button name="btnClick">Button1</button>
+
+<ol>
+    <li>Item1</li>
+    <li>Item1</li>
+    <li>Item1</li>
+    <li>Item1</li>
+</ol>
+<script>
+    var ten = document.getElementsByClassName("name")[1];// tro den vi tri minh muon goi
+    var btn=document.getElementsByName("btnClick");
+    var item=document.getElementsByTagName("li")[3];
+</script>
+</body>
+
+</html>

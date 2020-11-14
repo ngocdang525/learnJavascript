@@ -1,0 +1,30 @@
+.form__bacNhat {
+    width: 500px;
+
+}
+.form__bacNhat input{
+    height: 35px;
+    width: 100%;
+
+}
+.text-center{
+text-align: center;
+max-width: 500px;
+text-transform: uppercase;
+}
+
+.form-group span{
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-top:10px;
+}
+
+#btn_giaiToan{
+cursor: pointer;
+margin-top:20px;
+padding:10px 20px ;
+background:red;
+color:#ffffff;
+border: 0;
+border-radius: 5px;
+}
